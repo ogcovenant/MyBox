@@ -4,8 +4,8 @@ const Logo = () => {
   return (
     <>
       <div className="flex items-center">
-        <Image src={"/logo.svg"} alt="MyBox Logo" width="40" height={40} />
-        <p className="text-xl font-bold">MyBox</p>
+        <Image src={"/logo.svg"} alt="MyBox Logo" width="50" height={50} />
+        <p className="text-2xl font-bold">MyBox</p>
       </div>
     </>
   );
