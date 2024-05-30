@@ -37,7 +37,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="bg-[#3146ff36] h-screen w-1/5 p-5 select-none">
+      <div className="bg-[#3146ff36] h-screen w-full p-5 select-none">
         <div className="">
           <Logo />
         </div>
