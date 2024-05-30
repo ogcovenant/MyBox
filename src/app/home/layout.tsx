@@ -10,15 +10,13 @@ export default function DashboardLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="flex">
-          <div className="w-1/5">
-            <Sidebar />
-          </div>
-          <div className="w-4/5">
-            <Header />
-            {children}
-          </div>
+      <body className="flex h-screen max-h-screen overflow-y-hidden">
+        <div className="w-1/5">
+          <Sidebar />
+        </div>
+        <div className="w-4/5 overflow-y-auto">
+          <Header />
+          {children}
         </div>
       </body>
     </html>

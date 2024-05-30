@@ -60,10 +60,6 @@ const Sidebar = () => {
                 <p className="font-semibold">Home</p>
               </li>
               <li className="cursor-pointer flex items-center gap-3">
-                <Clock size="26" color="#000" />
-                <p className="font-semibold">Recent Files</p>
-              </li>
-              <li className="cursor-pointer flex items-center gap-3">
                 <Folder2 size="26" color="#000" />
                 <p className="font-semibold">Folders</p>
               </li>
