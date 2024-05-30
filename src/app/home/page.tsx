@@ -7,7 +7,7 @@ import { FileTable } from "../../../components/FileTable";
 const Dashboard = () => {
   return (
     <>
-      <div className="p-6">
+      <div className="p-6 h-full overflow-y-auto">
         <div className="flex justify-between">
           <h1 className="text-3xl font-extrabold">Home</h1>
           <button className="bg-[#3146ff] text-white text-lg p-2 px-3 rounded-md">
