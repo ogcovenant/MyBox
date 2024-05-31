@@ -4,7 +4,7 @@ const Signup = () => {
   return (
     <>
       <div className="w-full h-screen max-h-screen flex flex-col justify-center">
-        <div className="w-5/6 md:w-3/6 mx-auto shadow-2xl p-2 py-8 md:p-8 rounded-xl">
+        <div className="md:w-3/6 mx-auto shadow-2xl p-2 py-8 md:p-8 rounded-xl">
           <div className="flex justify-center mx-auto">
             <a href="/"><Logo /></a>
           </div>
