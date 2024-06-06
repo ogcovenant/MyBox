@@ -34,11 +34,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
       if (data.user.id) {
         setUser(data.user);
-      } else {
       }
     } catch (error) {
       router.replace("/login");
-      alert("An unexpected error occured");
     } finally {
       setLoading(false);
     }
