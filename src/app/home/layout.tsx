@@ -18,11 +18,10 @@ export default function DashboardLayout({
   useEffect(() => {
     // if () {
     // @ts-ignore
-    if (!user && !user.id && authError) {
-      router.replace("/login");
-      // }
+    if( authError){
+      router.replace("/login")
     }
-  }, [user, isLoading, authError]);
+  }, [authError]);
 
   return (
     <html lang="en">
