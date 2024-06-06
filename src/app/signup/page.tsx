@@ -21,7 +21,7 @@ const Signup = () => {
       // }
     }
 
-  }, [user, isLoading]);
+  }, [user, isLoading, authError]);
 
   const [loading, setLoading] = useState(false);
   const [openAlert, setOpenAlert] = useState(false);

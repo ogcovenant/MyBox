@@ -20,7 +20,7 @@ const Login = () => {
       router.replace("/home");
       // }
     }
-  }, [user, isLoading]);
+  }, [user, isLoading, authError]);
 
   const [loading, setLoading] = useState(false);
   const [openAlert, setOpenAlert] = useState(false);
