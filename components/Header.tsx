@@ -19,8 +19,6 @@ const Header = () => {
           <SearchNormal1 size="24" color="#000" className="w-[10%]" />
         </div>
         <div className="flex gap-2">
-          <Notification size="32" color="#000" className="cursor-pointer" />
-          <Setting2 size="32" color="#000" className="cursor-pointer" />
           <ProfileCircle size="32" color="#000" className="cursor-pointer" />
         </div>
       </div>

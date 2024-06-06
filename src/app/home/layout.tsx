@@ -9,9 +9,9 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="h-screen max-h-screen overflow-y-hidden">
-        <div className="flex">
+    <html lang="en" suppressHydrationWarning={Boolean("true")}>
+      <body className="h-screen max-h-screen overflow-y-hidden flex">
+        <div className="flex w-full max-h-screen overflow-hidden ">
           <div className="w-1/5">
             <Sidebar />
           </div>
