@@ -1,10 +1,16 @@
-"use client"
+"use client";
 
-import { Add, DocumentText1, Image as ImgIcon, MusicSquare, VideoSquare } from "iconsax-react";
+import {
+  Add,
+  DocumentText1,
+  Image as ImgIcon,
+  MusicSquare,
+  VideoSquare,
+} from "iconsax-react";
 import { FileTable } from "../../../components/FileTable";
 
-
 const Dashboard = () => {
+
   return (
     <>
       <div className="p-6 h-full overflow-y-auto">
