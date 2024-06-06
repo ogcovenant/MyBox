@@ -11,12 +11,12 @@ import { useAuth } from "@/context/AuthContext";
 
 const Login = () => {
   const router = useRouter();
-  const { user, loading: isLoading } = useAuth();
+  const { user, loading: isLoading, error:authError } = useAuth();
 
   useEffect(() => {
     // if () {
     // @ts-ignore
-    if (user && user.id) {
+    if (user && user.id && !authError) {
       router.replace("/home");
       // }
     }

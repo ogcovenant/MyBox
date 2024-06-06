@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 const AuthContext = createContext({
   user: {},
   loading: false,
+  error: false,
   setUser: (user: {}) => {},
 });
 
@@ -19,6 +20,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
   const [user, setUser] = useState({});
   const [loading, setLoading] = useState(true);
+  const [ error, setError ] = useState(false)
 
   const fetchToken = async () => {
     setLoading(true);
@@ -36,7 +38,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         setUser(data.user);
       }
     } catch (error) {
-      router.replace("/login");
+      setError(true)
     } finally {
       setLoading(false);
     }
@@ -47,7 +49,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, setUser, loading }}>
+    <AuthContext.Provider value={{ user, setUser, loading, error }}>
       {children}
     </AuthContext.Provider>
   );

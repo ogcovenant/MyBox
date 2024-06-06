@@ -11,15 +11,16 @@ import { useAuth } from "@/context/AuthContext";
 
 const Signup = () => {
   const router = useRouter();
-  const { user, loading: isLoading } = useAuth();
+  const { user, loading: isLoading, error: authError } = useAuth();
 
   useEffect(() => {
     // if () {
       // @ts-ignore
-      if (user && user.id) {
+      if (user && user.id && !authError) {
         router.replace("/home");
       // }
     }
+
   }, [user, isLoading]);
 
   const [loading, setLoading] = useState(false);
